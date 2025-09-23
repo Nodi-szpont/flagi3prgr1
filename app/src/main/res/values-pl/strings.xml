@@ -2,4 +2,5 @@
 <resources>
     <string name="app_name">Flagi3ptgr1</string>
     <string name="polecenie">wybierz kolory które nie sa w polskiej fladze</string>
+    <string name="komunitkat">To jest kolor flagi Polski</string>
 </resources>

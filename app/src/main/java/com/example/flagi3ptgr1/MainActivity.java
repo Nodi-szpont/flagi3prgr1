@@ -2,6 +2,7 @@ package com.example.flagi3ptgr1;
 
 import android.os.Bundle;
 import android.view.View;
+import android.widget.TextView;
 import android.widget.Toast;
 
 import androidx.activity.EdgeToEdge;
@@ -11,6 +12,8 @@ import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowInsetsCompat;
 
 public class MainActivity extends AppCompatActivity {
+    private TextView textViewPolecenie;
+    private int licznikPrzycisków = 0;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -22,15 +25,20 @@ public class MainActivity extends AppCompatActivity {
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom);
             return insets;
         });
+
+        textViewPolecenie = findViewById(R.id.textViewPolecenie);
     }
 
     public void test(View view) {
-        Toast.makeText(this, "", Toast.LENGTH_SHORT).show();
+      //  Toast.makeText(this, "", Toast.LENGTH_SHORT).show();
 
         view.setVisibility(View.INVISIBLE);
+        if (licznikPrzycisków == 4) {
+            textViewPolecenie.setText("Brawo to jest flaga Polski");
+        };
     }
 
     public void test1(View view) {
-        Toast.makeText(this, "To kolor flagi", Toast.LENGTH_SHORT).show();
+        Toast.makeText(this, R.string.komunitkat, Toast.LENGTH_SHORT).show();
     }
 }

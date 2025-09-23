@@ -1,4 +1,5 @@
 <resources>
     <string name="app_name">Flagi3ptgr1</string>
     <string name="polecenie">Select colors which are not in a polish flag</string>
+    <string name="komunitkat">This color is in polish flag</string>
 </resources>
